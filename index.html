@@ -850,21 +850,8 @@
       </ul>
     </div>
 
-    <!-- Пока форма не подключена к CRM (задача BOS #1295), вместо неё — прямые контакты.
-         Включить форму: вписать адрес приёма в data-endpoint, убрать hidden у формы и удалить блок #reach. -->
-    <div class="form reach rv d1" id="reach">
-      <h3>Быстрее всего — в&nbsp;Telegram</h3>
-      <p class="note">Напишите в&nbsp;двух-трёх фразах, чем занимается компания и&nbsp;что хотите изменить.</p>
-      <div class="reach-cta">
-        <a class="btn btn-lg" href="https://t.me/marakuliny" target="_blank" rel="noopener">Написать в&nbsp;Telegram
-          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a class="tlink" href="mailto:marakuliny@yandex.ru?subject=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F">Написать на&nbsp;почту
-          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      </div>
-    </div>
-
-    <!-- Адрес приёма заявок: data-endpoint. Пусто = демо-режим (ничего не отправляется). -->
-    <form class="form rv d1" id="leadForm" novalidate data-endpoint="" hidden>
+    <!-- Адрес приёма заявок: data-endpoint (источник «marakulin.biz» в CRM ASM Strategy, задача BOS #1295). Пусто = демо-режим. -->
+    <form class="form rv d1" id="leadForm" novalidate data-endpoint="https://asmstrat.orgbos.com/api/lead/a97cdffe612749a18c67dc2076e334bd/">
       <h3>Заявка на&nbsp;встречу</h3>
       <p class="note">Поля со&nbsp;звёздочкой обязательны. Остальное поможет подготовиться к&nbsp;разговору.</p>
       <div class="fields">
